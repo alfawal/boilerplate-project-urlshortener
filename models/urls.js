@@ -1,12 +1,12 @@
 import mongoose from "mongoose";
 const { Schema } = mongoose;
 
-const url = Schema(
+const url = new Schema(
   {
     original_url: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   { timestamps: true }
 );
